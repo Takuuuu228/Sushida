@@ -515,8 +515,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ff9f4ea52cc2244bfee03593dd9c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameDisplay: {fileID: 1699989094}
-  stringsDisplay: {fileID: 1281393714}
+  gameManager: {fileID: 1272194761}
+  japaneseText: {fileID: 1699989094}
+  romajiText: {fileID: 1281393714}
 --- !u!1 &792948780
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,35 +783,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5d7923d66ca4354d87e9974468127c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wordPairGroups:
-  - wordPairs:
-    - romaji: suika
-      japanese: "\u3059\u3044\u304B"
-    - romaji: dango
-      japanese: "\u3060\u3093\u3054"
-    - romaji: kemusi
-      japanese: "\u3051\u3080\u3057"
-    - romaji: houki
-      japanese: "\u307B\u3046\u304D"
-  - wordPairs:
-    - romaji: syodou
-      japanese: "\u3057\u3087\u3069\u3046"
-    - romaji: koudou
-      japanese: "\u3053\u3046\u3069\u3046"
-    - romaji: hudebako
-      japanese: "\u3075\u3067\u3070\u3053"
-    - romaji: tyaimu
-      japanese: "\u3061\u3083\u3044\u3080"
-  - wordPairs:
-    - romaji: nahudaire
-      japanese: "\u306A\u3075\u3060\u3044\u308C"
-    - romaji: heabando
-      japanese: "\u3078\u3042\u3070\u3093\u3069"
-    - romaji: syakkinn
-      japanese: "\u3057\u3083\u3063\u304D\u3093"
-    - romaji: karenda-
-      japanese: "\u304B\u308C\u3093\u3060\u30FC"
-  magnification: 100
+  wordPairs:
+  - romaji: hasami
+    japanese: "\u306F\u3055\u307F"
+  - romaji: sumaho
+    japanese: "\u3059\u307E\u307B"
+  - romaji: dango
+    japanese: "\u3060\u3093\u3054"
+  - romaji: kuruma
+    japanese: "\u304F\u308B\u307E"
+  - romaji: keitai
+    japanese: "\u3051\u3044\u305F\u3044"
+  - romaji: daikonn
+    japanese: "\u3060\u3044\u3053\u3093"
+  - romaji: nenkinn
+    japanese: "\u306D\u3093\u304D\u3093"
+  - romaji: ke-buru
+    japanese: "\u3051\u30FC\u3076\u308B"
+  - romaji: zidousya
+    japanese: "\u3058\u3069\u3046\u3057\u3083"
+  - romaji: torikarubi
+    japanese: "\u3068\u308A\u304B\u308B\u3073"
+  - romaji: benkyou
+    japanese: "\u3079\u3093\u304D\u3087\u3046"
+  - romaji: kyoutaku
+    japanese: "\u304D\u3087\u3046\u305F\u304F"
+  - romaji: kyouryuu
+    japanese: "\u304D\u3087\u3046\u308A\u3085\u3046"
+  - romaji: syabondama
+    japanese: "\u3057\u3083\u307C\u3093\u3060\u307E"
+  - romaji: ma-ka-penn
+    japanese: "\u307E\u30FC\u304B\u30FC\u307A\u3093"
+  - romaji: rouninsei
+    japanese: "\u308D\u3046\u306B\u3093\u305B\u3044"
+  OnRomajiInputComplete:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1272194762
 Transform:
   m_ObjectHideFlags: 0
