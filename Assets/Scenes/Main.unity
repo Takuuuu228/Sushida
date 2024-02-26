@@ -395,6 +395,7 @@ GameObject:
   - component: {fileID: 771011300}
   - component: {fileID: 771011299}
   - component: {fileID: 771011298}
+  - component: {fileID: 771011304}
   - component: {fileID: 771011302}
   - component: {fileID: 771011303}
   m_Layer: 5
@@ -501,7 +502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c7c5ded8c2e95428169d7021060a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 60
+  timeRemaining: 10
   countdownText: {fileID: 270208918}
 --- !u!114 &771011303
 MonoBehaviour:
@@ -516,8 +517,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1272194761}
+  prefabObjects:
+  - {fileID: 8856758441430522608, guid: bb8e1a37e1157fb4cabd5f82a778bde5, type: 3}
+  - {fileID: 3584265968977835844, guid: cdce0c344f0956b4d9a9714313edbe69, type: 3}
+  - {fileID: 1127508857560016198, guid: fccaedff67d275445a6102968c42ee35, type: 3}
+  - {fileID: 2392037335978750141, guid: f5bc5badeae52d44b942b994d4ba8d4e, type: 3}
   japaneseText: {fileID: 1699989094}
   romajiText: {fileID: 1281393714}
+--- !u!114 &771011304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771011297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54d29cc5ca370f42ba7d97d788eabd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1187760644}
 --- !u!1 &792948780
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,9 +835,6 @@ MonoBehaviour:
     japanese: "\u307E\u30FC\u304B\u30FC\u307A\u3093"
   - romaji: rouninsei
     japanese: "\u308D\u3046\u306B\u3093\u305B\u3044"
-  OnRomajiInputComplete:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1272194762
 Transform:
   m_ObjectHideFlags: 0
@@ -827,7 +843,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272194760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -192.67914, y: 275.16232, z: -466.22168}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
